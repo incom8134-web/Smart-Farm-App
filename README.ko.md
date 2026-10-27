@@ -21,8 +21,8 @@
 
 ## 앱 다운로드
 
-- [안드로이드 APK (V11)](android/Ai_Smart_Farm_V11.apk) – 휴대폰에 설치합니다.
-- [MIT App Inventor 프로젝트 (V11)](android/Ai_Smart_Farm_V11.aia) – 편집 가능한 소스입니다.
+- [안드로이드 APK (V11)](android/Ai_Smart_Farm_V11.apk?raw=true) – 휴대폰에 설치합니다.
+- [MIT App Inventor 프로젝트 (V11)](android/Ai_Smart_Farm_V11.aia?raw=true) – 편집 가능한 소스입니다.
 - [설치 및 테스트 안내](android/README.ko.md)
 
 수업 자료: [파워포인트](<docs/AI 스마트팜 활용하는 데이터 와 기계학습_최종버전_v3_2026.10.14.pptx>)

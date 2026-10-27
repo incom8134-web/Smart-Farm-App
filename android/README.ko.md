@@ -2,8 +2,8 @@
 
 [English](README.md) | **한국어**
 
-- [Ai_Smart_Farm_V11.apk](Ai_Smart_Farm_V11.apk): 안드로이드 설치 파일
-- [Ai_Smart_Farm_V11.aia](Ai_Smart_Farm_V11.aia): 편집 가능한 MIT App Inventor 소스
+- [Ai_Smart_Farm_V11.apk](Ai_Smart_Farm_V11.apk?raw=true): 안드로이드 설치 파일
+- [Ai_Smart_Farm_V11.aia](Ai_Smart_Farm_V11.aia?raw=true): 편집 가능한 MIT App Inventor 소스
 
 V11은 프로젝트 버전 이름이며, 앱 안에 표시되는 버전은 1.3입니다.
 수업 전에 휴대폰과 실제 보드로 앱을 시험하세요.
