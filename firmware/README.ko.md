@@ -9,6 +9,14 @@
 아두이노 IDE에서 `nano-controller/nano-controller.ino`와 `esp32-cam/esp32-cam.ino`를 엽니다.
 ESP32 스케치는 폴더 전체를 함께 두세요. `.cpp`와 `.h` 파일도 프로그램의 일부입니다. 보드마다 프로그램은 하나입니다.
 
+| 폴더 / 파일 | 용도 |
+|---|---|
+| [`nano-controller/`](nano-controller) | 최종 아두이노 나노 프로그램 (센서, LCD, 블루투스, 출력) |
+| [`esp32-cam/`](esp32-cam) | 최종 ESP32-CAM 카메라 프로그램 |
+| [`sensor-tests/`](sensor-tests) | 부품별 실습: `lightsensor`, `soilmoisture`, `pump` |
+| [`serial-output-test/`](serial-output-test) | 벤치 시험: 시리얼 모니터로 LED/팬/펌프 켜고 끄기 |
+| [`check_firmware.py`](check_firmware.py) | 펌웨어 오프라인 검사 (개발자용) |
+
 카메라는 수업 자료의 공유기 방식을 사용합니다. 휴대폰과 카메라가 같은 공유기에 접속하고,
 앱에는 카메라가 시작할 때 출력하는 IP 주소를 입력합니다.
 
@@ -178,5 +186,10 @@ uv run --with ziglang==0.15.1 python firmware/check_firmware.py
 버퍼 넘침, 시간 초과, 센서 오류, 액티브 로우 출력, 타이머 넘김, 카메라 버퍼 정리를 시험합니다.
 전기적 타이밍, DHT 신호, 실제 Wi-Fi 기기는 시뮬레이션하지 않습니다.
 
-`sensor-tests/`의 스케치는 부품 하나씩 배우는 실습입니다. 토양 실습은 A1을 읽고, 펌프 실습은 꺼진 상태에서 시작해
-감독하에 3초 ON / 3초 OFF를 반복합니다.
+`sensor-tests/`의 스케치는 부품 하나씩 배우는 실습입니다. 조도 실습은 A0, 토양 실습은 A1을 읽고,
+펌프 실습은 꺼진 상태에서 시작해 감독하에 3초 ON / 3초 OFF를 반복합니다.
+
+`serial-output-test/`는 출력 벤치 시험입니다. 나노의 하드웨어 Serial(9600 baud, Newline)을 사용하며
+`LED_ON`, `LED_OFF`, `FAN_ON`, `FAN_OFF`, `PUMP_ON`, `PUMP_OFF`, `ALL_OFF` 명령을 받습니다.
+하드웨어 Serial을 쓰므로 **이 스케치가 동작하는 동안에는 공유 PCB에서 ESP32를 업로드하지 마세요.**
+시험이 끝나면 최종 나노 프로그램을 다시 업로드합니다.

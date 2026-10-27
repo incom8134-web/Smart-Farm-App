@@ -11,6 +11,14 @@ Open `nano-controller/nano-controller.ino` and `esp32-cam/esp32-cam.ino` in the 
 IDE. Keep the ESP32 sketch's whole folder together: its `.cpp` and `.h` files are part of
 the program. Each board has one permanent program.
 
+| Folder / file | Purpose |
+|---|---|
+| [`nano-controller/`](nano-controller) | Final Arduino Nano program (sensors, LCD, Bluetooth, outputs) |
+| [`esp32-cam/`](esp32-cam) | Final ESP32-CAM camera program |
+| [`sensor-tests/`](sensor-tests) | Single-part lessons: `lightsensor`, `soilmoisture`, `pump` |
+| [`serial-output-test/`](serial-output-test) | Bench test: switch LED/fan/pump from the Serial Monitor |
+| [`check_firmware.py`](check_firmware.py) | Offline check of the firmware (developers) |
+
 The camera uses the router method from the teaching deck: the phone and the camera join
 the same router, and the app uses the IP address the camera prints at startup.
 
@@ -188,5 +196,10 @@ and tests split/combined commands, invalid input, overflow, timeouts, sensor fai
 active-low outputs, timer wrap-around and camera-buffer cleanup. It does not simulate
 electrical timing, the DHT signal or real Wi-Fi clients.
 
-The `sensor-tests/` sketches are single-part lessons: the soil test reads A1, and the pump
-test runs a supervised 3-second ON / 3-second OFF cycle starting OFF.
+The `sensor-tests/` sketches are single-part lessons: the light test reads A0, the soil test
+reads A1, and the pump test runs a supervised 3-second ON / 3-second OFF cycle starting OFF.
+
+`serial-output-test/` is a bench test for the outputs. It uses the Nano's hardware Serial
+(9600 baud, Newline) and accepts `LED_ON`, `LED_OFF`, `FAN_ON`, `FAN_OFF`, `PUMP_ON`, `PUMP_OFF`
+and `ALL_OFF`. Because it uses hardware Serial, **do not upload the ESP32 while it is running**
+on the shared PCB – upload the final Nano program again afterwards.

@@ -113,7 +113,9 @@ DIP 스위치를 바꾸기 전에는 USB와 외부 전원을 모두 분리하세
 ├── firmware/
 │   ├── nano-controller/  아두이노 나노 펌웨어
 │   ├── esp32-cam/        ESP32-CAM 펌웨어
-│   └── sensor-tests/     부품을 하나씩 시험하는 간단한 스케치
+│   ├── sensor-tests/     부품을 하나씩 시험하는 간단한 스케치
+│   ├── serial-output-test/  시리얼 모니터로 출력을 켜고 끄는 벤치 시험
+│   └── check_firmware.py    펌웨어 오프라인 검사 (개발자용)
 ├── images/             README에 쓰인 그림
 └── docs/               수업 발표 자료 (파워포인트)
 ```

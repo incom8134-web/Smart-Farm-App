@@ -116,7 +116,9 @@ never let it run dry. Disconnect USB and external power before changing DIP swit
 ├── firmware/
 │   ├── nano-controller/  Arduino Nano firmware
 │   ├── esp32-cam/        ESP32-CAM firmware
-│   └── sensor-tests/     Small sketches to test one part at a time
+│   ├── sensor-tests/     Small sketches to test one part at a time
+│   ├── serial-output-test/  Bench test: switch outputs from the Serial Monitor
+│   └── check_firmware.py    Offline firmware check (developers)
 ├── images/             Figures used in this README
 └── docs/               Teaching presentation (PowerPoint)
 ```
