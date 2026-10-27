@@ -26,7 +26,7 @@ lessons, not an app feature.
 - [MIT App Inventor project (V11)](android/Ai_Smart_Farm_V11.aia?raw=true) – editable source.
 - [Install and test guide](android/README.md).
 
-Teaching deck: [PowerPoint](<docs/AI 스마트팜 활용하는 데이터 와 기계학습_최종버전_v3_2026.10.14.pptx>).
+Teaching deck: [PowerPoint](<docs/AI 스마트팜 활용하는 데이터 와 기계학습_최종버전_v3_2026.10.14.pptx?raw=true>).
 
 ## System architecture
 
