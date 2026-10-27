@@ -2,8 +2,8 @@
 
 **English** | [한국어](README.ko.md)
 
-- [Ai_Smart_Farm_V11.apk](Ai_Smart_Farm_V11.apk?raw=true): Android install package.
-- [Ai_Smart_Farm_V11.aia](Ai_Smart_Farm_V11.aia?raw=true): editable MIT App Inventor source.
+- [Ai_Smart_Farm_V11.apk](Ai_Smart_Farm_V11.apk): Android install package.
+- [Ai_Smart_Farm_V11.aia](Ai_Smart_Farm_V11.aia): editable MIT App Inventor source.
 
 V11 is the project revision label; the version shown inside the app is 1.3.
 Test the app with the phone and the real board before a class.
